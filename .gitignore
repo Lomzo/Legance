@@ -1,0 +1,8 @@
+back/
+node_modules/
+.gitattributes
+gulpfile.js
+package-lock.json
+package.json
+run.md
+work.code-workspace
