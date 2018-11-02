@@ -3,6 +3,20 @@
 $img: "../img/";
 $fonts: "../fonts/";
 
+// base font
+$main-font-size: 16 !default;
+$main-line-height: 1.6 !default;
+$main-font-family-google: 'Roboto' !default;
+$main-font-family: $main-font-family-google, sans-serif !default;
+
+
+// font weight
+$font-weight-thin: 100 !default; 	// 100
+$font-weight-light: 300 !default;	// 300
+$font-weight-regular: 400 !default;	// 400
+$font-weight-medium: 500 !default;	// 500
+$font-weight-bold: 700 !default;	// 700
+$font-weight-black: 900 !default;	// 900
 
 // color
 
