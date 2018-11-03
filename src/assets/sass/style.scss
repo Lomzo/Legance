@@ -15,20 +15,11 @@
 // Project variables
 @import "vars";
 
-
-/* ## Intro
-====================*/
-@import "blocks/intro";
-
-////////
-// main
-////////
-@import "main";
-
-
-
 //CSS RESET
 @import 'reset';
+
+//CSS COLOR
+@import 'color';
 
 //MIXNIS
 //@import 'mixins';
