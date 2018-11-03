@@ -23,10 +23,6 @@ html, body {
     font: 16px/1.6 "Roboto", sans-serif;
 }
 
-.italic {
-    font-style: italic;
-}
-
 /*
 .w900{position: relative;}
 .w900:after{content: ""; position: absolute; right: 80%; width: 100vw; height: 1px; background: #f00; top: 100%;}
@@ -1053,6 +1049,9 @@ html {
     background: rgba(0, 0, 0, 0.5);
 }
 
+/*
+	TYPOGRAPHY
+*/
 h1, h2, h3,
 h4, h5, h6,
 .h1, .h2, .h3,
@@ -1149,6 +1148,7 @@ p,
     font-weight: 500;
 }
 
+b,
 .bold,
 .w700 {
     font-weight: 700;
@@ -1157,4 +1157,12 @@ p,
 .black,
 .w900 {
     font-weight: 900;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
 }

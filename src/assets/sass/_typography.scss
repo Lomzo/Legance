@@ -1,5 +1,9 @@
-//TYPOGRAPHY
+/*
+	TYPOGRAPHY
+*/
 
+
+// header
 h1, h2, h3, 
 h4, h5, h6,
 .h1, .h2, .h3, 
@@ -74,6 +78,7 @@ p,
 	margin: 0.5em 0 0.25em;
 }
 
+
 /* font-weight */
 .thin,
 .w100{font-weight: $font-weight-thin;}
@@ -88,8 +93,14 @@ p,
 .medium,
 .w500{font-weight: $font-weight-medium;}
 
+b,
 .bold,
 .w700{font-weight: $font-weight-bold;}
 
 .black, 
 .w900{font-weight: $font-weight-black;}
+
+
+// font style
+.italic{font-style: italic;}
+.oblique{font-style: oblique;}
