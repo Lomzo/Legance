@@ -6,6 +6,10 @@
 @import "fontawesome/fa-solid";
 @import "fontawesome/fontawesome";
 */
+/*
+$grid-columns: 			12 !default;
+$grid-gutter-width: 	30px !default;
+*/
 /* 
 	life "reset", for the rest you need to follow yourself
 */
