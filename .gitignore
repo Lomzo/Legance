@@ -1,6 +1,6 @@
 back/
 node_modules/
-psd/
+src/psd/
 .gitattributes
 gulpfile.js
 package-lock.json
