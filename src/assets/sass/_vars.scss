@@ -1,24 +1,24 @@
 // Paths
-$img:		"../img/";		// img folder
-$fonts:		"../fonts/";	// fonts folder
+$img: "../img/";		// img folder
+$fonts: "../fonts/";	// fonts folder
 
 // color
-$White:		"#fff";
-$Black:		"#000";
+$White: "#fff";
+$Black: "#000";
 
 // base font
-$main-font-size:				16px !default;
-$main-line-height:				1.6 !default;
-$main-font-family-google:		'Roboto' !default;
-$main-font-family:				$main-font-family-google, sans-serif !default;
+$main-font-size: 16px !default;
+$main-line-height: 1.6 !default;
+$main-font-family-google: 'Roboto' !default;
+$main-font-family: $main-font-family-google, sans-serif !default;
 
 // font weight
-$font-weight-thin:			100 !default; 	// 100
-$font-weight-light:			300 !default;	// 300
-$font-weight-regular:		400 !default;	// 400
-$font-weight-medium:		500 !default;	// 500
-$font-weight-bold:			700 !default;	// 700
-$font-weight-black:			900 !default;	// 900
+$font-weight-thin: 100 !default; 	// 100
+$font-weight-light: 300 !default;	// 300
+$font-weight-regular: 400 !default;	// 400
+$font-weight-medium: 500 !default;	// 500
+$font-weight-bold: 700 !default;	// 700
+$font-weight-black: 900 !default;	// 900
 
 //WIDTH UP
 $laptop-u: 2560px; 	// ultra hd (4k)
@@ -33,10 +33,10 @@ $mobile-m: 375px;	// mobile middle
 $mobile-s: 320px;	// mobile small
 
 // Grid columns
-$grid-columns:				12 !default;
-$grid-gutter-width-fix:		30px !default;
-$grid-gutter-width:			1.805% !default;
+$grid-columns: 12 !default;
+$grid-gutter-width-fix: 30px !default;
+$grid-gutter-width: 1.805% !default;
 
-$main-max-width:			$laptop-l;
+$main-max-width: $laptop-l;
 
 
