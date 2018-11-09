@@ -1,0 +1,111 @@
+/* Welcome Grid! */
+
+/*.container{max-width: $main-max-width; margin: 0 auto;}*/
+.row + .row, 
+.grid + .grid{margin-top: $grid-gutter-width;}
+
+.row.fixedSpaces + .row.fixedSpaces, 
+.grid.fixedSpaces + .grid.fixedSpaces{margin-top: $grid-gutter-width-fix;}
+
+.row, 
+.grid {
+	margin-left: -$grid-gutter-width;
+	margin-right: -$grid-gutter-width;
+	display: flex;
+	flex-wrap: wrap;
+
+	/* default spaces */
+	& > [class*='col-'] {
+		padding-left: $grid-gutter-width / 2;
+		padding-right: $grid-gutter-width / 2;
+	}
+
+	&.noSpaces {
+		margin-left: 0;
+		margin-right: 0;
+
+		>[class*='col-'] {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	&.fixedSpaces {
+		margin-left: -$grid-gutter-width-fix;
+		margin-right: -$grid-gutter-width-fix;
+
+		>[class*='col-'] {
+			padding-left: $grid-gutter-width-fix / 2;
+			padding-right: $grid-gutter-width-fix / 2;
+		}
+	}
+
+	.toLeft[class*='col-'] {
+		margin-left: 0 !important;
+		margin-right: auto !important;
+	}
+
+	.toRight[class*='col-'] {
+		margin-right: 0 !important;
+		margin-left: auto !important;
+		float: right;
+	}
+
+	.toCenter[class*='col-'] {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+}
+
+// defaul grid
+@for $i from 1 through $grid-columns {
+	$width: (100% / $grid-columns) * $i;
+
+	.row > .col-#{$i},
+	.grid > .col-#{$i} {
+		width: $width;
+	}
+}
+
+// 10 col
+@for $i from 1 through 20 {
+	$width: (100% / 20) * $i;
+
+	.row > .col-#{$i*5}-100,
+	.grid > .col-#{$i*5}-100 {
+		width: $width;
+	}
+}
+
+
+/* ipad landscape and > */
+@include media($tablet, "max") {
+	.grid:not(.later)>[class*='col-']:not([class*='col-phablet-']):not([class*='col-phone-']) {
+		max-width: 100%;
+	}
+
+	.grid>.col-tablet-1-1 {
+		max-width: 100% !important;
+	}
+
+	.grid>.col-tablet-1-2 {
+		max-width: 50% !important;
+	}
+
+	.grid>.col-tablet-1-3 {
+		max-width: 33.33333333% !important;
+	}
+
+	.grid>.col-tablet-2-3 {
+		max-width: 66.66666666% !important;
+	}
+
+	.grid>.col-tablet-1-4 {
+		max-width: 25% !important;
+	}
+
+	.grid>.col-tablet-3-4 {
+		max-width: 75% !important;
+	}
+}

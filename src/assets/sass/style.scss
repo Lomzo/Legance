@@ -1,11 +1,11 @@
 /* ## FontAwesome
 ====================*/
-
+/*
 @import "../fonts/fontawesome/regular";
 @import "../fonts/fontawesome/brands";
 @import "../fonts/fontawesome/solid";
 @import "../fonts/fontawesome/fontawesome";
-
+*/
 
 // VARIABLES
 @import "vars";
@@ -14,7 +14,7 @@
 @import 'reset';
 
 //CSS COLOR
-@import 'colors';
+//@import 'colors';
 
 //MIXNIS
 //@import 'mixins';
@@ -29,7 +29,10 @@
 //@import 'colors';
 
 //FLEX GRID
-//@import 'grid';
+@import 'media';
+
+//FLEX GRID
+@import 'grid';
 
 //FLEX GRID
 //@import 'flex';
