@@ -1,13 +1,17 @@
 // Insert Media
 @mixin media($width, $minOrMax) {
-	@if $minOrMax == "max" {
+	@if $minOrMax=="max" {
 		$width: $width - 1px;
 	}
 
-  @media (#{$minOrMax}-width: $width) { @content; }
+	@media (#{$minOrMax}-width: $width) {
+		@content;
+	}
 }
 
 // Insert Media Range
 @mixin mediaRange($width-1, $width-2) {
-  @media (max-width: $width-1) and (min-width: $width-2) { @content; }
+	@media (max-width: $width-1) and (min-width: $width-2) {
+		@content;
+	}
 }
