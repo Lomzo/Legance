@@ -81,26 +81,72 @@ p,
 
 /* font-weight */
 .thin,
-.w100{font-weight: $font-weight-thin;}
+.w100{
+	font-weight: $font-weight-thin;
+}
 
 .light,
-.w300{font-weight: $font-weight-light;}
+.w300{
+	font-weight: $font-weight-light;
+}
 
 .regular,
 .normal,
-.w400{font-weight: $font-weight-regular;}
+.w400{
+	font-weight: $font-weight-regular;
+}
 
 .medium,
-.w500{font-weight: $font-weight-medium;}
+.w500{
+	font-weight: $font-weight-medium;
+}
 
 b,
 .bold,
-.w700{font-weight: $font-weight-bold;}
+.w700{
+	font-weight: $font-weight-bold;
+}
 
 .black, 
-.w900{font-weight: $font-weight-black;}
+.w900{
+	font-weight: $font-weight-black;
+}
 
 
 // font style
-.italic{font-style: italic;}
-.oblique{font-style: oblique;}
+.italic{
+	font-style: italic;
+}
+
+.oblique{
+	font-style: oblique;
+}
+
+
+// ul, ol
+ul, 
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
