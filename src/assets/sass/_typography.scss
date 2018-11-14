@@ -1,78 +1,77 @@
 /*
 	TYPOGRAPHY
 */
- 
 
 // header
 h1, h2, h3, 
 h4, h5, h6,
 .h1, .h2, .h3, 
-.h4, .h5, .h6{
+.h4, .h5, .h6 {
 	font-weight: inherit;
 }
 
-.hero{
+.hero {
 	font-size: 3.5rem; 
 	line-height: 1.2; 
 	margin: 0.565em 0 0.25em;
 }
 
 h1, 
-.h1{
+.h1 {
 	font-size: 3rem; 
 	line-height: 1.25; 
 	margin: 0.615em 0 0.25em;
 }
 
 h2, 
-.h2{
+.h2 {
 	font-size: 2.5rem; 
 	line-height: 1.3; 
 	margin: 0.625em 0 0.25em;
 }
 
 h3, 
-.h3{
+.h3 {
 	font-size: 2rem; 
 	line-height: 1.35; 
 	margin: 0.615em 0 0.25em;
 }
 
 h4, 
-.h4{
+.h4 {
 	font-size: 1.5rem; 
 	line-height: 1.4;
 	margin: 0.675em 0 0.25em;
 }
 
 h5, 
-.h5{
+.h5 {
 	font-size: 1.35rem; 
 	line-height: 1.45; 
 	margin: 0.675em 0 0.25em;
 }
 
 h6, 
-.h6{
+.h6 {
 	font-size: 1.2rem; 
 	line-height: 1.5; 
 	margin: 0.675em 0 0.25em;
 }
 
 p, 
-.p{
+.p {
 	font-size: 1rem; 
 	line-height: 1.6; 
 	margin: 0.7em 0 0.25em;
 }
 
-.small{
+.small {
 	font-size: 0.85rem;
 	line-height: 1.55; 
 	margin: 0.6em 0 0.25em;
 }
 
-.micro{
+.micro {
 	font-size: 0.7rem; 
 	line-height: 1.5; 
 	margin: 0.5em 0 0.25em;
@@ -81,44 +80,44 @@ p,
 
 /* font-weight */
 .thin,
-.w100{
+.w100 {
 	font-weight: $font-weight-thin;
 }
 
 .light,
-.w300{
+.w300 {
 	font-weight: $font-weight-light;
 }
 
 .regular,
 .normal,
-.w400{
+.w400 {
 	font-weight: $font-weight-regular;
 }
 
 .medium,
-.w500{
+.w500 {
 	font-weight: $font-weight-medium;
 }
 
 b,
 .bold,
-.w700{
+.w700 {
 	font-weight: $font-weight-bold;
 }
 
 .black, 
-.w900{
+.w900 {
 	font-weight: $font-weight-black;
 }
 
 
 // font style
-.italic{
+.italic {
 	font-style: italic;
 }
 
-.oblique{
+.oblique {
 	font-style: oblique;
 }
 
