@@ -280,6 +280,125 @@ b,
     content: "";
 }
 
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.75em 1.125em;
+    border: 2px solid;
+    border-radius: 0.5em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn.btn-lg {
+    font-size: 1.25em;
+}
+
+.btn.btn-sm {
+    font-size: 0.75em;
+}
+
+.btn.btn-block {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.btn.btn-primary {
+    background: #cc4169;
+    border-color: #ac2e52;
+    color: white;
+}
+
+.btn.btn-outline-primary {
+    background: transparent;
+    color: #cc4169;
+}
+
+.btn.btn-secondary {
+    background: #322b80;
+    border-color: #231e5a;
+    color: white;
+}
+
+.btn.btn-outline-secondary {
+    background: transparent;
+    color: #322b80;
+}
+
+.btn.btn-success {
+    background: #4CAF50;
+    border-color: #3d8b40;
+    color: white;
+}
+
+.btn.btn-outline-success {
+    background: transparent;
+    color: #4CAF50;
+}
+
+.btn.btn-danger {
+    background: #F44336;
+    border-color: #ea1c0d;
+    color: white;
+}
+
+.btn.btn-outline-danger {
+    background: transparent;
+    color: #F44336;
+}
+
+.btn.btn-warning {
+    background: #FF9800;
+    border-color: #cc7a00;
+    color: white;
+}
+
+.btn.btn-outline-warning {
+    background: transparent;
+    color: #FF9800;
+}
+
+.btn.btn-info {
+    background: #03A9F4;
+    border-color: #0286c2;
+    color: white;
+}
+
+.btn.btn-outline-info {
+    background: transparent;
+    color: #03A9F4;
+}
+
+.btn.btn-light {
+    background: #dfdfdf;
+    border-color: #c6c6c6;
+    color: #222222;
+}
+
+.btn.btn-outline-light {
+    background: transparent;
+    color: #dfdfdf;
+}
+
+.btn.btn-dark {
+    background: #222222;
+    color: #dfdfdf;
+    border-color: #090909;
+}
+
+.btn.btn-outline-dark {
+    background: transparent;
+    color: #222222;
+}
+
+.btn.btn-link {
+    background: transparent;
+    border-color: transparent;
+}
+
 /* Welcome Grid! */
 /*.container{max-width: $main-max-width; margin: 0 auto;}*/
 .row + .row,
