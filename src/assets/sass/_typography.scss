@@ -2,6 +2,56 @@
 	TYPOGRAPHY
 */
 
+/* font-weight */
+.thin,
+.w100 {
+	font-weight: $font-weight-thin;
+}
+
+.light,
+.w300 {
+	font-weight: $font-weight-light;
+}
+
+.regular,
+.normal,
+.w400 {
+	font-weight: $font-weight-regular;
+}
+
+.medium,
+.w500 {
+	font-weight: $font-weight-medium;
+}
+
+b,
+.bold,
+.w700 {
+	font-weight: $font-weight-bold;
+}
+
+.black, 
+.w900 {
+	font-weight: $font-weight-black;
+}
+
+
+// font style
+.italic {
+	font-style: italic;
+}
+
+.oblique {
+	font-style: oblique;
+}
+
+
+// defaul style
+.radius{
+	@include radius($border-radius*200);
+}
+
+
 // header
 h1, h2, h3, 
 h4, h5, h6,
@@ -65,11 +115,6 @@ p,
 	margin: 0.75em 0 0.25em;
 }
 
-.small {
-	font-size: 0.85rem;
-	line-height: 1.55; 
-	margin: 0.6em 0 0.25em;
-}
 
 .micro {
 	font-size: 0.7rem; 
@@ -77,252 +122,29 @@ p,
 	margin: 0.5em 0 0.25em;
 }
 
-
-/* font-weight */
-.thin,
-.w100 {
-	font-weight: $font-weight-thin;
+.btn.micro {
+	margin: 0 0.5em 0.75em 0;
 }
 
-.light,
-.w300 {
-	font-weight: $font-weight-light;
+.small {
+	font-size: 0.85rem;
+	line-height: 1.55; 
+	margin: 0.6em 0 0.25em;
 }
 
-.regular,
-.normal,
-.w400 {
-	font-weight: $font-weight-regular;
+.btn.small {
+	margin: 0 0.5em 0.75em 0;
 }
 
-.medium,
-.w500 {
-	font-weight: $font-weight-medium;
+.big {
+	font-size: 1.25rem;
+	line-height: 1.35; 
+	margin: 0.6em 0 0.25em;
 }
 
-b,
-.bold,
-.w700 {
-	font-weight: $font-weight-bold;
-}
-
-.black, 
-.w900 {
-	font-weight: $font-weight-black;
+.btn.big {
+	margin: 0 0.5em 0.75em 0;
 }
 
 
-// font style
-.italic {
-	font-style: italic;
-}
 
-.oblique {
-	font-style: oblique;
-}
-
-/*
-	CONTENT
-*/
-
-// ul, ol
-.content ul, 
-.content ol {
-	margin: 0 0 1.5em;
-	padding: 0 0 0 2em;
-}
-
-.content ul li, 
-.content ol li {
-	margin: 0 0 0.75em;
-}
-
-.content ul li {
-	list-style: disc;
-}
-
-.content ol li {
-	list-style: decimal;
-}
-
-.content dt {
-	font-weight: bold;
-}
-
-.content dd {
-	margin: 0.125em 0 0.75em 1em;
-}
-
-
-// table
-.content table {
-	margin: 0 0 1.5em;
-	width: 100%;
-}
-
-.content td, 
-.content th {
-	border: 1px solid lighten($main-dark, 75%);
-	padding: 0.5em 0.75em;
-}
-
-.content th {
-	background: lighten($main-dark, 85%);
-	font-weight: bold;
-	text-align: left;
-	font-size: 1.125em;
-}
-
-// hr
-.content hr {border: 1px solid $secondary; margin: 1.5em 0; width: 100%; height: 0;}
-
-// blockquote and q
-.content q {
-	background: $secondary; 
-	display: inline-block;
-	color: lighten($secondary, 75%);
-	padding: 0.1em 0.5em 0.125em;
-	@include radius(0.25em);
-} 
-
-.text q:after, 
-.text q:before {
-	content: "";
-}
-
-.content blockquote {
-	background: $secondary; 
-	font-style: normal; 
-	text-align: left; 
-	color: lighten($secondary, 75%);
-	quotes: "" ""; 
-	position: relative; 
-	display: block; 
-	border: 0 none; 
-	font-size: 1.125rem;
-	padding: 0.75em 1em; 
-	margin: 0.5em 0 1.5em;
-	@include radius(0.25em);
-}
-
-.content blockquote:after, 
-.text blockquote:before {
-	content: "";
-}
-
-// button
-.btn{
-	cursor: pointer;
-	display: inline-block; 
-	padding: 0.75em 1.125em; 
-	border: $main-font-size/8 solid;
-	@include radius(0.5em);
-	user-select: none;
-}
-
-.btn.btn-lg {
-	font-size: 1.25em;
-}
-
-.btn.btn-sm {
-	font-size: 0.75em;
-}
-
-.btn.btn-block{
-	display: block;
-	text-align: center;
-	width: 100%;
-}
-
-.btn.btn-primary{
-	background: $primary;
-	border-color: darken($primary, 10%);
-	color: lighten($primary, 90%);
-}
-
-.btn.btn-outline-primary{
-	background: transparent;
-	color: $primary;
-}
-
-.btn.btn-secondary{
-	background: $secondary;
-	border-color: darken($secondary, 10%);
-	color: lighten($secondary, 90%);
-}
-
-.btn.btn-outline-secondary{
-	background: transparent;
-	color: $secondary;
-}
-
-.btn.btn-success{
-	background: $success;
-	border-color: darken($success, 10%);
-	color: lighten($success, 90%);
-}
-
-.btn.btn-outline-success{
-	background: transparent;
-	color: $success;
-}
-
-.btn.btn-danger{
-	background: $danger;
-	border-color: darken($danger, 10%);
-	color: lighten($danger, 90%);
-}
-
-.btn.btn-outline-danger{
-	background: transparent;
-	color: $danger;
-}
-
-.btn.btn-warning{
-	background: $warning;
-	border-color: darken($warning, 10%);
-	color: lighten($warning, 90%);
-}
-
-.btn.btn-outline-warning{
-	background: transparent;
-	color: $warning;
-}
-
-.btn.btn-info{
-	background: $info;
-	border-color: darken($info, 10%);
-	color: lighten($info, 90%);
-}
-
-.btn.btn-outline-info{
-	background: transparent;
-	color: $info;
-}
-
-.btn.btn-light{
-	background: $main-light;
-	border-color: darken($main-light, 10%);
-	color: $main-dark;
-}
-
-.btn.btn-outline-light{
-	background: transparent;
-	color: $main-light;
-}
-
-.btn.btn-dark{
-	background: $main-dark;
-	color: $main-light;
-	border-color: darken($main-dark, 10%);
-}
-
-.btn.btn-outline-dark{
-	background: transparent;
-	color: $main-dark;
-}
-
-.btn.btn-link{
-	background: transparent;
-	border-color: transparent;
-}

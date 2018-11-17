@@ -1,0 +1,199 @@
+/*
+	CONTENT
+*/
+
+// ul, ol
+.content ul, 
+.content ol {
+	margin: 0 0 1.5em;
+	padding: 0 0 0 2em;
+}
+
+.content ul li, 
+.content ol li {
+	margin: 0 0 0.75em;
+}
+
+.content ul li {
+	list-style: disc;
+}
+
+.content ol li {
+	list-style: decimal;
+}
+
+.content dt {
+	font-weight: bold;
+}
+
+.content dd {
+	margin: 0.125em 0 0.75em 1em;
+}
+
+
+// table
+.content table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+.content td, 
+.content th {
+	border: $border-width solid lighten($main-dark, 75%);
+	padding: 0.5em 0.75em;
+}
+
+.content th {
+	background: lighten($main-dark, 85%);
+	font-weight: bold;
+	text-align: left;
+	font-size: 1.125em;
+}
+
+// hr
+.content hr {border: $border-width*1.5 solid $secondary; margin: 1.5em 0; width: 100%; height: 0;}
+
+// blockquote and q
+.content q {
+	background: $secondary; 
+	display: inline-block;
+	color: lighten($secondary, 75%);
+	padding: 0.1em 0.5em 0.125em;
+	@include radius($border-radius);
+} 
+
+.text q:after, 
+.text q:before {
+	content: "";
+}
+
+.content blockquote {
+	background: $secondary; 
+	font-style: normal; 
+	text-align: left; 
+	color: lighten($secondary, 75%);
+	quotes: "" ""; 
+	position: relative; 
+	display: block; 
+	border: $border-width solid darken($secondary, 10%); 
+	font-size: 1.125rem;
+	padding: 0.75em 1.25em; 
+	margin: 0.5em 0 1.5em;
+	@include radius($border-radius*2);
+}
+
+.content blockquote:after, 
+.text blockquote:before {
+	content: "";
+}
+
+// button
+.btn{
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.035rem; 
+	padding: 0.75em 1.5em; 
+	border: $border-width solid;
+	@include radius($border-radius);
+	user-select: none;
+	margin: 0 0.5em 0.75em 0;
+}
+
+.btn.btn-block{
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.btn.btn-primary{
+	background: $primary;
+	border-color: darker($primary, 2);
+	color: lighten($primary, 90%);
+}
+
+.btn.btn-outline-primary{
+	background: transparent;
+	color: $primary;
+}
+
+.btn.btn-secondary{
+	background: $secondary;
+	border-color: darker($secondary, 2);
+	color: lighten($secondary, 90%);
+}
+
+.btn.btn-outline-secondary{
+	background: transparent;
+	color: $secondary;
+}
+
+.btn.btn-success{
+	background: $success;
+	border-color: darker($success, 2);
+	color: lighten($success, 90%);
+}
+
+.btn.btn-outline-success{
+	background: transparent;
+	color: $success;
+}
+
+.btn.btn-danger{
+	background: $danger;
+	border-color: darker($danger, 2);
+	color: lighten($danger, 90%);
+}
+
+.btn.btn-outline-danger{
+	background: transparent;
+	color: $danger;
+}
+
+.btn.btn-warning{
+	background: $warning;
+	border-color: darker($warning, 2);
+	color: lighten($warning, 90%);
+}
+
+.btn.btn-outline-warning{
+	background: transparent;
+	color: $warning;
+}
+
+.btn.btn-info{
+	background: $info;
+	border-color: darker($info, 2);
+	color: lighten($info, 90%);
+}
+
+.btn.btn-outline-info{
+	background: transparent;
+	color: $info;
+}
+
+.btn.btn-light{
+	background: $main-light;
+	border-color: darker($main-light, 2);
+	color: $main-dark;
+}
+
+.btn.btn-outline-light{
+	background: transparent;
+	color: darker($main-light, 4);
+}
+
+.btn.btn-dark{
+	background: $main-dark;
+	color: $main-light;
+	border-color: darker($main-dark, 2);
+}
+
+.btn.btn-outline-dark{
+	background: transparent;
+	color: $main-dark;
+}
+
+.btn.btn-link{
+	background: transparent;
+	border-color: transparent;
+}
