@@ -1,3 +1,13 @@
 // Some short snippets
 
-.text-red { color: $red; }
+// lighter
+@function lighter($color, $tone) {
+	$adjust: 16*$tone;
+	@return adjust-color($color, $red: $adjust, $green: $adjust, $blue: $adjust);
+}
+
+// darker
+@function darker($color, $tone) {
+	$adjust: -16*$tone;
+	@return adjust-color($color, $red: $adjust, $green: $adjust, $blue: $adjust);
+}

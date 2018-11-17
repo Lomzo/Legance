@@ -2,9 +2,19 @@
 $img: "../img/"; // img folder
 $fonts: "../fonts/"; // fonts folder
 
+
 // color
-$White: "#fff";
-$Black: "#000";
+$main-light: #dfdfdf;
+$main-dark: #222222;
+
+$primary: #cc4169;
+$secondary: #322b80;
+
+$success: #4CAF50;
+$danger: #F44336;
+$warning: #FF9800;
+$info: #03A9F4;
+
 
 // base font
 $main-font-size: 16px !default;

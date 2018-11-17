@@ -62,7 +62,7 @@ p,
 .p {
 	font-size: 1rem; 
 	line-height: 1.6; 
-	margin: 0.7em 0 0.25em;
+	margin: 0.75em 0 0.25em;
 }
 
 .small {
@@ -123,36 +123,59 @@ b,
 
 
 // ul, ol
-ul, 
-ol {
-	margin: 0 0 1.5em 3em;
+.content ul, 
+.content ol {
+	margin: 0 0 1.5em;
+	padding: 0 0 0 2em;
 }
 
-ul {
+.content ul li, 
+.content ol li {
+	margin: 0 0 0.75em;
+}
+
+.content ul li {
 	list-style: disc;
 }
 
-ol {
+.content ol li {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
-
-dt {
+.content dt {
 	font-weight: bold;
 }
 
-dd {
-	margin: 0 1.5em 1.5em;
+.content dd {
+	margin: 0.125em 0 0.75em 1em;
 }
 
 
 // table
-table {
+.content table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
+
+.content td, 
+.content th {
+	border: 1px solid lighten($main-dark, 75%);
+	padding: 0.5em 0.75em;
+}
+
+.content th {
+	background: lighten($main-dark, 85%);
+	font-weight: bold;
+	text-align: left;
+	font-size: 1.125em;
+}
+
+.text table{margin: 50px 0 35px; border-collapse: collapse; border: 0 none; width: 100%; font-size: 14px; line-height: 1.43;}
+.text td, .text th{padding: 15px; text-align: left; border: 0 none;}
+.text th{padding: 37px 29px 32px; background-color: #2a2f62; font: bold 12px/1.33 GothamPro; letter-spacing: 0.5px; text-transform: uppercase; color: #fff;}
+.text td{border: solid 1px #e6e6e6;}
+/* .text tr:first-child td{border-top: 0 none;} */
+.text td[align="right"], .text th[align="right"]{text-align: right;}
+.text td[align="center"], .text th[align="center"]{text-align: center;}
+.text td > *{margin: 0;}
+.text td > *:first-child{margin-top: 0;}
