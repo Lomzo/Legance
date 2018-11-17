@@ -192,6 +192,9 @@ b,
     font-style: oblique;
 }
 
+/*
+	CONTENT
+*/
 .content ul,
 .content ol {
     margin: 0 0 1.5em;
@@ -237,49 +240,44 @@ b,
     font-size: 1.125em;
 }
 
-.text table {
-    margin: 50px 0 35px;
-    border-collapse: collapse;
-    border: 0 none;
+.content hr {
+    border: 1px solid #322b80;
+    margin: 1.5em 0;
     width: 100%;
-    font-size: 14px;
-    line-height: 1.43;
+    height: 0;
 }
 
-.text td, .text th {
-    padding: 15px;
+.content q {
+    background: #322b80;
+    display: inline-block;
+    color: white;
+    padding: 0.1em 0.5em 0.125em;
+    border-radius: 0.25em;
+}
+
+.text q:after,
+.text q:before {
+    content: "";
+}
+
+.content blockquote {
+    background: #322b80;
+    font-style: normal;
     text-align: left;
+    color: white;
+    quotes: "" "";
+    position: relative;
+    display: block;
     border: 0 none;
+    font-size: 1.125rem;
+    padding: 0.75em 1em;
+    margin: 0.5em 0 1.5em;
+    border-radius: 0.25em;
 }
 
-.text th {
-    padding: 37px 29px 32px;
-    background-color: #2a2f62;
-    font: bold 12px/1.33 GothamPro;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.text td {
-    border: solid 1px #e6e6e6;
-}
-
-/* .text tr:first-child td{border-top: 0 none;} */
-.text td[align="right"], .text th[align="right"] {
-    text-align: right;
-}
-
-.text td[align="center"], .text th[align="center"] {
-    text-align: center;
-}
-
-.text td > * {
-    margin: 0;
-}
-
-.text td > *:first-child {
-    margin-top: 0;
+.content blockquote:after,
+.text blockquote:before {
+    content: "";
 }
 
 /* Welcome Grid! */
